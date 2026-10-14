@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>RGBYMC</title>
 
 
 </head>
@@ -11,39 +12,28 @@
 
 
 <body>
-<!--Okay so my intiial idea is to try to make 
-a small game type thing where the user 
-collects coloured objects in an 
-inventory and unlocks 
-those colours on the webpage as a paint by numbers type thing
--->
-
-<!--
-required for sure 
-- background of div squares each with an assigned number and colour
-    - initially black and white
-- inventory as a footer that sticks to the bottom of the user's window, holds divs. 
-- various images on the background
-    - intially black and white
-    - changes colour on click to colour of a associated number
-    - changes position on click with delay to being nestled into the inventory 
-- numbered divs squares associated with specific image colour change to said colour
-when image is in user inventory
--->
-<!--
-Idea: Cafe background with red floor, yellow walls, brown tables, and blue chairs. 
-- Apple image unlocks red. 
-- Banana image unlocks yellow. 
-- Espresso shot image unlocks brown. 
-- Water cup image unlocks blue. 
--->
-
-<!--hunger takes the colour from the world!-->
+<!--My original idea was too complex so I reduced the scope to focus only on boxes that change colour when mixed-->
 
 
+<!--first box that toggles red and black-->
+<div id="box1">
+<button id="button1" onclick="button1Clicked()">Red</button>
+</div>
 
+<!--second box that toggles green and black-->
+<div id="box2"><button id="button2" onclick="button2Clicked()">Green</button></div>
 
+<!--third box that toggles blue and black-->
+<div id="box3"><button id="button3" onclick="button3Clicked()">Blue</button></div>
 
+<!--fourth box connected to the red and green boxes, toggles black when one or both are false and yellow when both are true-->
+<div id="box4"><button id="button4" onclick="button4Clicked()">Yellow!</button></div>
+
+<!--same function as above but with red and blue-->
+<div id="box5"><button id="button5" onclick="button5Clicked()">Magenta!</button></div>
+
+<!--same function as above but with green and blue-->
+<div id="box6"><button id="button6" onclick="button6Clicked()">Cyan!</button></div>
 
 
 
